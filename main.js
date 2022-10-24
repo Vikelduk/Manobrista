@@ -7,8 +7,8 @@ carroHeight = 90;
 backgroundImage = "parkingLot.jpg";
 carroImage = "car2.png";
 
-roverX = 10; 
-roverY = 10;
+carroX = 10; 
+carroY = 220;
 
 
 function add() 
@@ -112,6 +112,13 @@ function right()
         uploadBackground(); 
         uploadcarro(); 
     } 
+}
+
+if ((carroY == 100)|| (carroX == 420))
+{
+   carroY = 220;
+   carroX = 10;
+   document.getElementById("parabens").innerHTML = "Parabéns, você conseguiu!";
 }
 
 

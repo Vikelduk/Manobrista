@@ -74,7 +74,9 @@ function up()
          carroY = carroY - 10; 
          console.log("Quando direcional cima for pressionada, x = " + carroX + " | y = " + carroY); 
          uploadBackground(); 
-         uploadcarro(); 
+         uploadcarro();
+         console.log(carroY);
+         console.log(carroX);
     } 
 }
 
@@ -87,6 +89,8 @@ function down()
         console.log("Quando direcional baixo for pressionada, x = " + carroX + " | y = " +carroY); 
         uploadBackground(); 
         uploadcarro();
+        console.log(carroY);
+        console.log(carroX);
     } 
 }
 
@@ -98,7 +102,9 @@ function left()
         carroX =carroX - 10; 
         console.log("Quando direcional esquerda for pressionada, x = " + carroX + " | y = " +carroY); 
         uploadBackground(); 
-        uploadcarro(); 
+        uploadcarro();
+        console.log(carroY);
+        console.log(carroX);
     }
 }
 
@@ -110,15 +116,17 @@ function right()
         carroX =carroX + 10; 
         console.log("Quando direcional direita for pressionada, x = " + carroX + " | y = " +carroY); 
         uploadBackground(); 
-        uploadcarro(); 
-    } 
+        uploadcarro();
+        console.log(carroY);
+        console.log(carroX); 
+    }         
 }
 
 if ((carroY == 100)|| (carroX == 420))
 {
    carroY = 220;
    carroX = 10;
-   document.getElementById("parabens").innerHTML = "Parabéns, você conseguiu!";
+   document.getElementById("parabens").value = "Parabéns, você conseguiu!";
 }
 
 
